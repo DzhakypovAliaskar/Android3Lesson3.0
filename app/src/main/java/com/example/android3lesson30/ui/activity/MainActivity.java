@@ -9,6 +9,9 @@ import android.os.Bundle;
 import com.example.android3lesson30.R;
 import com.example.android3lesson30.databinding.ActivityMainBinding;
 
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
@@ -16,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setupNavigation();
     }
@@ -24,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     private void setupNavigation() {
         NavHostFragment navHostFragment =
                 (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
-        assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
 
         AppBarConfiguration appBarConfiguration =

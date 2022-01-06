@@ -4,15 +4,13 @@ import android.app.Application;
 import com.example.android3lesson30.data.network.remote.RetrofitClient;
 import com.example.android3lesson30.data.network.apiservise.WeatherApiService;
 
-public class App extends Application {
+import dagger.hilt.android.HiltAndroidApp;
 
-    public RetrofitClient retrofitClient;
-    public static WeatherApiService weatherApiService;
+@HiltAndroidApp
+public class App extends Application {
 
     @Override
     public void onCreate() {
         super.onCreate();
-        retrofitClient = new RetrofitClient();
-        weatherApiService = retrofitClient.provideApi();
     }
 }
