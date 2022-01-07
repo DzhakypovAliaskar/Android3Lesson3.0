@@ -79,6 +79,7 @@
                         android:id="@+id/cloud_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:textSize="18sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -132,12 +133,13 @@
                         android:id="@+id/max_temperature"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp"
                         android:text="35 C"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginBottom="60dp"/>
+                        app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
                         android:id="@+id/arrow_upward"
@@ -154,6 +156,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:text="25 C"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -196,8 +199,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/humidity"
                         tools:text="49%" />
@@ -219,8 +222,8 @@
                         android:layout_height="30dp"
                         android:src="@drawable/pressure"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
@@ -229,9 +232,9 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/pressure"
                         tools:text="1,007mBar" />
 
@@ -252,9 +255,9 @@
                         android:layout_height="30dp"
                         android:src="@drawable/speed"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/speed_tv"
@@ -263,10 +266,10 @@
                         android:text="20км/ч"
                         android:textColor="@color/black"
                         android:textSize="18sp"
-                        app:layout_constraintTop_toBottomOf="@+id/wind_speed"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@+id/wind_speed" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -284,10 +287,10 @@
                         android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:src="@drawable/sunrise"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"/>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/sunrise_tv"
@@ -295,10 +298,10 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="15sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/sunrise"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sunrise"
                         tools:text="6:00 AM" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -318,9 +321,9 @@
                         android:layout_height="30dp"
                         android:src="@drawable/sunset"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/sunset_tv"
@@ -328,8 +331,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="15sp"
-                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/sunset"
                         tools:text="19:00 AM" />
@@ -351,9 +354,9 @@
                         android:layout_height="30dp"
                         android:src="@drawable/time"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/time_tv"
@@ -362,10 +365,10 @@
                         android:text="20ч 12м"
                         android:textColor="@color/black"
                         android:textSize="15sp"
-                        app:layout_constraintTop_toBottomOf="@+id/time"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toBottomOf="@+id/time" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
