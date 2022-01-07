@@ -31,7 +31,7 @@
 
             <Button
                 android:id="@+id/location_btn"
-                android:layout_width="160dp"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:background="@drawable/oval_name_city"
                 android:text="@string/bishkek"
@@ -60,7 +60,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_1"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toTopOf="@id/container_4"
                     app:layout_constraintEnd_toStartOf="@id/container_2"
                     app:layout_constraintStart_toStartOf="parent"
@@ -68,8 +68,8 @@
 
                     <ImageView
                         android:id="@+id/cloud"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/cloud"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_2"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toTopOf="@id/container_5"
                     app:layout_constraintEnd_toStartOf="@id/container_3"
                     app:layout_constraintStart_toEndOf="@id/container_1"
@@ -126,7 +126,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_3"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toTopOf="@id/container_6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/container_2"
@@ -182,7 +182,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_4"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toTopOf="@id/container_7"
                     app:layout_constraintEnd_toStartOf="@id/container_5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -190,8 +190,8 @@
 
                     <ImageView
                         android:id="@+id/humidity"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/humidity"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -216,7 +216,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_5"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toTopOf="@id/container_8"
                     app:layout_constraintEnd_toStartOf="@id/container_6"
                     app:layout_constraintStart_toEndOf="@id/container_4"
@@ -224,8 +224,8 @@
 
                     <ImageView
                         android:id="@+id/pressure"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/pressure"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -250,7 +250,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_6"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toTopOf="@id/container_9"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/container_5"
@@ -258,8 +258,8 @@
 
                     <ImageView
                         android:id="@+id/wind_speed"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/speed"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -284,7 +284,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_7"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/container_8"
                     app:layout_constraintStart_toStartOf="parent"
@@ -292,8 +292,8 @@
 
                     <ImageView
                         android:id="@+id/sunrise"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/sunrise"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -318,7 +318,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_8"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/container_9"
                     app:layout_constraintStart_toEndOf="@id/container_7"
@@ -326,8 +326,8 @@
 
                     <ImageView
                         android:id="@+id/sunset"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/sunset"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -352,7 +352,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_9"
                     android:layout_width="0dp"
-                    android:layout_height="110dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/container_8"
@@ -360,8 +360,8 @@
 
                     <ImageView
                         android:id="@+id/time"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/time"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
