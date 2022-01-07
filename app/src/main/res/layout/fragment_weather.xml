@@ -57,11 +57,11 @@
                 app:layout_constraintTop_toBottomOf="@id/location_btn">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_1"
+                    android:id="@+id/container_1"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
-                    app:layout_constraintBottom_toTopOf="@id/cons_4"
-                    app:layout_constraintEnd_toStartOf="@id/cons_2"
+                    app:layout_constraintBottom_toTopOf="@id/container_4"
+                    app:layout_constraintEnd_toStartOf="@id/container_2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -89,12 +89,12 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_2"
+                    android:id="@+id/container_2"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
-                    app:layout_constraintBottom_toTopOf="@id/cons_5"
-                    app:layout_constraintEnd_toStartOf="@id/cons_3"
-                    app:layout_constraintStart_toEndOf="@id/cons_1"
+                    app:layout_constraintBottom_toTopOf="@id/container_5"
+                    app:layout_constraintEnd_toStartOf="@id/container_3"
+                    app:layout_constraintStart_toEndOf="@id/container_1"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
@@ -120,12 +120,12 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_3"
+                    android:id="@+id/container_3"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
-                    app:layout_constraintBottom_toTopOf="@id/cons_6"
+                    app:layout_constraintBottom_toTopOf="@id/container_6"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/cons_2"
+                    app:layout_constraintStart_toEndOf="@id/container_2"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
@@ -169,18 +169,16 @@
                         app:layout_constraintStart_toEndOf="@+id/min_temperature"
                         app:layout_constraintTop_toTopOf="@+id/min_temperature" />
 
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_4"
+                    android:id="@+id/container_4"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
-                    app:layout_constraintBottom_toTopOf="@id/cons_7"
-                    app:layout_constraintEnd_toStartOf="@id/cons_5"
+                    app:layout_constraintBottom_toTopOf="@id/container_7"
+                    app:layout_constraintEnd_toStartOf="@id/container_5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/cons_1">
-
+                    app:layout_constraintTop_toBottomOf="@id/container_1">
 
                     <ImageView
                         android:id="@+id/humidity"
@@ -206,15 +204,14 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_5"
+                    android:id="@+id/container_5"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
-                    app:layout_constraintBottom_toTopOf="@id/cons_8"
-                    app:layout_constraintEnd_toStartOf="@id/cons_6"
-                    app:layout_constraintStart_toEndOf="@id/cons_4"
-                    app:layout_constraintTop_toBottomOf="@id/cons_2">
+                    app:layout_constraintBottom_toTopOf="@id/container_8"
+                    app:layout_constraintEnd_toStartOf="@id/container_6"
+                    app:layout_constraintStart_toEndOf="@id/container_4"
+                    app:layout_constraintTop_toBottomOf="@id/container_2">
 
                     <ImageView
                         android:id="@+id/pressure"
@@ -240,15 +237,14 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_6"
+                    android:id="@+id/container_6"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
-                    app:layout_constraintBottom_toTopOf="@id/cons_9"
+                    app:layout_constraintBottom_toTopOf="@id/container_9"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/cons_5"
-                    app:layout_constraintTop_toBottomOf="@id/cons_3">
+                    app:layout_constraintStart_toEndOf="@id/container_5"
+                    app:layout_constraintTop_toBottomOf="@id/container_3">
 
                     <ImageView
                         android:id="@+id/wind_speed"
@@ -270,19 +266,18 @@
                         app:layout_constraintTop_toBottomOf="@+id/wind_speed"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        />
+                        app:layout_constraintBottom_toBottomOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_7"
+                    android:id="@+id/container_7"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/cons_8"
+                    app:layout_constraintEnd_toStartOf="@id/container_8"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/cons_4">
+                    app:layout_constraintTop_toBottomOf="@id/container_4">
 
                     <ImageView
                         android:id="@+id/sunrise"
@@ -309,13 +304,13 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_8"
+                    android:id="@+id/container_8"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/cons_9"
-                    app:layout_constraintStart_toEndOf="@id/cons_7"
-                    app:layout_constraintTop_toBottomOf="@id/cons_5">
+                    app:layout_constraintEnd_toStartOf="@id/container_9"
+                    app:layout_constraintStart_toEndOf="@id/container_7"
+                    app:layout_constraintTop_toBottomOf="@id/container_5">
 
                     <ImageView
                         android:id="@+id/sunset"
@@ -342,13 +337,13 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cons_9"
+                    android:id="@+id/container_9"
                     android:layout_width="0dp"
                     android:layout_height="110dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/cons_8"
-                    app:layout_constraintTop_toBottomOf="@id/cons_6">
+                    app:layout_constraintStart_toEndOf="@id/container_8"
+                    app:layout_constraintTop_toBottomOf="@id/container_6">
 
                     <ImageView
                         android:id="@+id/time"
@@ -373,22 +368,6 @@
                         app:layout_constraintBottom_toBottomOf="parent"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-                <!--                android:id="@+id/temp_cl"-->
-                <!--                android:layout_width="60dp"-->
-                <!--                android:layout_height="70dp"-->
-                <!--                android:layout_marginStart="80dp"-->
-                <!--                android:layout_marginTop="70dp"-->
-                <!--                app:layout_constraintStart_toEndOf="@+id/cloud"-->
-                <!--                app:layout_constraintTop_toTopOf="@+id/card_cl">-->
-
-                <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

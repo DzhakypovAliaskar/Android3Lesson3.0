@@ -1,8 +1,10 @@
 package com.example.android3lesson30.ui.fragments.wether;
 
+import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
@@ -16,6 +18,8 @@ import com.example.android3lesson30.R;
 import com.example.android3lesson30.base.BaseFragment;
 import com.example.android3lesson30.databinding.FragmentWeatherBinding;
 import com.example.android3lesson30.models.WeatherModel;
+
+import java.time.Instant;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
@@ -46,6 +50,7 @@ public class WeatherFragment extends BaseFragment<WeatherViewModel, FragmentWeat
         viewModel = new ViewModelProvider(requireActivity()).get(WeatherViewModel.class);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void setUpObserves() {
         viewModel.getWeather(WeatherFragmentArgs.fromBundle(getArguments()).getCityName()).observe(getViewLifecycleOwner(), weatherModels -> {
@@ -59,7 +64,7 @@ public class WeatherFragment extends BaseFragment<WeatherViewModel, FragmentWeat
             binding.pressureTv.setText(String.valueOf(weatherModels.getMain().getPressure()));
             binding.sunriseTv.setText(String.valueOf(weatherModels.getSys().getSunrise()));
             binding.sunsetTv.setText(String.valueOf(weatherModels.getSys().getSunset()));
-//            binding.date.setText(String.valueOf(weatherModels.));
+            binding.date.setText(String.valueOf(Instant.ofEpochSecond(weatherModels.getDt())));
         });
     }
 }
