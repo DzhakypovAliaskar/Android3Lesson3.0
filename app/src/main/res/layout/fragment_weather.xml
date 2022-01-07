@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.wether.WeatherFragment">
+    tools:context=".ui.fragments.weather.WeatherFragment">
 
     <ImageView
         android:id="@+id/image"
@@ -12,7 +12,8 @@
         android:layout_height="300dp"
         android:scaleType="centerCrop"
         android:src="@drawable/city"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
@@ -33,7 +34,7 @@
                 android:layout_width="160dp"
                 android:layout_height="45dp"
                 android:background="@drawable/oval_name_city"
-                android:text="Bishkek "
+                android:text="@string/bishkek"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15sp"
-                android:text="sunday, 19 May 2021 | 00:00pm"
+                android:text="@string/sunday_19_may_2021_00_00pm"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="@+id/location_btn"
                 app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +74,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/cloud_tv"
@@ -116,7 +118,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/temperature"
                         app:layout_constraintStart_toEndOf="@+id/temperature_tv"
-                        app:layout_constraintTop_toTopOf="@+id/temperature_tv" />
+                        app:layout_constraintTop_toTopOf="@+id/temperature_tv"
+                        android:contentDescription="@string/todo" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -134,7 +137,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="60dp"
-                        android:text="35 C"
+                        android:text="@string/_35_c"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,14 +151,15 @@
                         android:layout_marginStart="2dp"
                         android:src="@drawable/ic_arrow_upward"
                         app:layout_constraintStart_toEndOf="@+id/max_temperature"
-                        app:layout_constraintTop_toTopOf="@+id/max_temperature" />
+                        app:layout_constraintTop_toTopOf="@+id/max_temperature"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/min_temperature"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="25 C"
+                        android:text="@string/_25_c"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -170,7 +174,8 @@
                         android:layout_marginStart="2dp"
                         android:background="@drawable/ic_arrow_downward"
                         app:layout_constraintStart_toEndOf="@+id/min_temperature"
-                        app:layout_constraintTop_toTopOf="@+id/min_temperature" />
+                        app:layout_constraintTop_toTopOf="@+id/min_temperature"
+                        android:contentDescription="@string/todo" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -191,7 +196,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/humidity_tv"
@@ -224,7 +230,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/pressure_tv"
@@ -257,13 +264,14 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/speed_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20км/ч"
+                        android:text="@string/_20"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -290,7 +298,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/sunrise_tv"
@@ -323,7 +332,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/sunset_tv"
@@ -356,13 +366,14 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:id="@+id/time_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20ч 12м"
+                        android:text="@string/_20_12"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"

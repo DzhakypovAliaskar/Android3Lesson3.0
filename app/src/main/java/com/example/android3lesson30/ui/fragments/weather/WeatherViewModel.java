@@ -1,7 +1,6 @@
-package com.example.android3lesson30.ui.fragments.wether;
+package com.example.android3lesson30.ui.fragments.weather;
 
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 import com.example.android3lesson30.base.BaseViewModel;
 import com.example.android3lesson30.data.network.repositories.WeatherRepository;
@@ -9,7 +8,6 @@ import com.example.android3lesson30.models.WeatherModel;
 
 import javax.inject.Inject;
 
-import dagger.hilt.InstallIn;
 import dagger.hilt.android.lifecycle.HiltViewModel;
 
 @HiltViewModel

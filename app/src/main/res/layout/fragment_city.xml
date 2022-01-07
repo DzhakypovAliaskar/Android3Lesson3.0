@@ -11,11 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/ic_place"
-        android:hint="Название"
+        android:hint="@string/Название"
         android:layout_margin="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/city_search_btn"
@@ -23,10 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
         android:text="Узнать погоду"
+        android:background="@drawable/oval_button_name_city"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@+id/name_city" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,10 @@
-package com.example.android3lesson30.ui.fragments.wether;
+package com.example.android3lesson30.ui.fragments.weather;
 
 import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -17,7 +16,6 @@ import android.view.ViewGroup;
 import com.example.android3lesson30.R;
 import com.example.android3lesson30.base.BaseFragment;
 import com.example.android3lesson30.databinding.FragmentWeatherBinding;
-import com.example.android3lesson30.models.WeatherModel;
 
 import java.time.Instant;
 
